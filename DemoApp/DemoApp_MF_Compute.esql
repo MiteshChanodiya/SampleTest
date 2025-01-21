@@ -5,6 +5,8 @@ CREATE COMPUTE MODULE DemoApp_MF_Compute
 	BEGIN
 		--CALL CopyMessageHeaders();
 		--CALL CopyEntireMessage();
+		SET OutputRoot = InputRoot;
+		
 		RETURN TRUE;
 	END;
 
