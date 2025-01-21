@@ -5,6 +5,9 @@ CREATE COMPUTE MODULE SapleGithub_MF_Compute
 	BEGIN
 		-- CALL CopyMessageHeaders();
 		-- CALL CopyEntireMessage();
+		SET OutputRoot = InputRoot;
+		SET OutputRoot = InputRoot;
+		
 		RETURN TRUE;
 	END;
 
